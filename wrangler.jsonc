@@ -1,0 +1,9 @@
+{
+  "name": "k2software-site",
+  "compatibility_date": "2026-10-12",
+  "assets": {
+    "directory": "./",
+    // O cliente desktop pede imagens em caminho fixo; caminho inexistente tem de devolver a página com 200.
+    "not_found_handling": "single-page-application"
+  }
+}
