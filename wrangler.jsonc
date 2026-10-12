@@ -10,6 +10,7 @@
   "workers_dev": true,
   // Rota só tem efeito em nome cujo registro DNS está com proxy.
   "routes": [
+    { "pattern": "www.k2software.com.br/*", "zone_name": "k2software.com.br" },
     { "pattern": "site-test.k2software.com.br/*", "zone_name": "k2software.com.br" },
     { "pattern": "cutover-test.k2software.com.br/*", "zone_name": "k2software.com.br" }
   ]
