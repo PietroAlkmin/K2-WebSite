@@ -5,5 +5,12 @@
     "directory": "./",
     // O cliente desktop pede imagens em caminho fixo; caminho inexistente tem de devolver a página com 200.
     "not_found_handling": "single-page-application"
-  }
+  },
+  // Com rotas declaradas o wrangler desliga o endereço workers.dev; mantido para teste.
+  "workers_dev": true,
+  // Rota só tem efeito em nome cujo registro DNS está com proxy.
+  "routes": [
+    { "pattern": "site-test.k2software.com.br/*", "zone_name": "k2software.com.br" },
+    { "pattern": "cutover-test.k2software.com.br/*", "zone_name": "k2software.com.br" }
+  ]
 }
